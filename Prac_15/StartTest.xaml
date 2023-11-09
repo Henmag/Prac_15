@@ -1,0 +1,19 @@
+﻿<Window x:Class="Prac_15.StartTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac_15"
+        mc:Ignorable="d"
+        Title="Панель пользователя" Height="245" Width="560" FontFamily="Segoe UI" FontSize="16" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Тестирование" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="530" Background="#FF9CB7D2"/>
+
+        <Label Content="Выберите тест" HorizontalAlignment="Left" Margin="25,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="ListTests" HorizontalAlignment="Left" Margin="34,101,0,0" VerticalAlignment="Top" Width="498"/>
+
+        <Button Content="Пройти тест" x:Name="GoTest" HorizontalAlignment="Left" Margin="432,133,0,0" VerticalAlignment="Top" Height="25" Width="100" BorderBrush="White" Background="White" Foreground="#FF9CB7D2" Click="GoTest_Click"/>
+        <Button Content="Выход" x:Name="Exit" HorizontalAlignment="Left" Margin="432,168,0,0" VerticalAlignment="Top" Height="25" Width="100" Background="White" BorderBrush="White" Foreground="#FF9CB7D2" Click="Exit_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Prac_15.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac_15"
+        mc:Ignorable="d"
+        Title="result" Height="220" Width="350" FontSize="16" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="324" Background="#FF9CB7D2"/>
+
+        <Label Content="Результат тестирования" HorizontalAlignment="Left" Margin="74,32,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Вы набрали Х баллов из 10" x:Name="SumPoint" HorizontalAlignment="Left" Margin="62,68,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Content="Далее" x:Name="Next" HorizontalAlignment="Left" Margin="123,118,0,0" VerticalAlignment="Top" Height="26" Width="86" BorderBrush="White" Background="#FFFDFDFD" Foreground="#FF9CB7D2" Click="Next_Click"/>
+    </Grid>
+</Window>
